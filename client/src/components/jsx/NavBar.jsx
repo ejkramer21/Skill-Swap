@@ -12,20 +12,17 @@ function NavBar() {
         <nav>
             <ul>
                 <li>
-                <Link to="/">Test</Link>
-                </li>
-                <li>
                 <Link to="/Profile">Profile</Link>
                 </li>
                 <li>
-                <Link to="/Search">Search</Link>
+                <Link to="/">Search</Link>
                 </li>
                 <li>
                 <Link to="/skills">Your Skills</Link>
                 </li>
-                <a onClick={signOut}>
-                    Sign Out
-                </a>
+                <li>
+                <Link to="/signout">Sign Out</Link>
+                </li>
             </ul>
         </nav>
         </>

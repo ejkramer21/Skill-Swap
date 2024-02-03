@@ -2,7 +2,7 @@ import React,{useState, useEffect} from "react";
 import "../css/Skills.css"
 
 function Skills() {
-    const [skills, setSkill] = useState(["gardening", "plumbing", "vacuuming"]);
+    const [skills, setSkill] = useState(["gardening", "plumbing", "vacuuming", "Refurbishing", "Tailoring"]);
     const [show, setShow] = useState(false);
     const [addedSkill, setAddedSkill] = useState('');
 

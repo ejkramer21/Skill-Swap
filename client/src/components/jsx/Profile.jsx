@@ -2,11 +2,21 @@ import React,{useState,useEffect} from "react";
 import '../css/Profile.css';
 
 function Profile() {
-    const [firstName, setFirstName] = useState('');
-    const [lastName, setLastName] = useState('');
-    const [zip, setZip] = useState('');
-    const [validZip, setValidZip] = useState(false);
-    const [about, setAbout] = useState('');
+    const [firstName, setFirstName] = useState('Lola');
+    const [lastName, setLastName] = useState('Smith');
+    const [zip, setZip] = useState('80972');
+    const [validZip, setValidZip] = useState(true);
+    const [about, setAbout] = useState("Hi, I'm Lola! I love to garden and I also refurbish furniture and tailor");
+
+    useEffect(()=> {
+        fetch("/new-user").then(
+            res=>res.json()
+        ).then(
+            data=>{
+                console.log(data)
+            }
+        )
+    },[])
 
     const handleFirst = (e) => {
         setFirstName(e.target.value);

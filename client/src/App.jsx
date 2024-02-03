@@ -5,6 +5,8 @@ import { BrowserRouter, Route, Routes} from 'react-router-dom';
 import NavBar from './components/jsx/NavBar';
 import Search from './components/jsx/Search';
 import Skills from './components/jsx/Skills';
+import Registration from './components/jsx/Registration';
+import Leave from './components/jsx/Leave';
 
 function App() {
 
@@ -14,10 +16,11 @@ function App() {
       <div>
         <NavBar />
         <Routes>
-          <Route path="/" element={<Test/>} />
           <Route path="/profile" element={<Profile/>} />
-          <Route path="/search" element={<Search/>} />
+          <Route path="/" element={<Search/>} />
           <Route path="/skills" element={<Skills/>} />
+          <Route path="/register" element={<Registration/>} />
+          <Route path="/signout" element={<Leave/>} />
         </Routes>
         
         
