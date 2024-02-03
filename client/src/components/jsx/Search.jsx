@@ -23,6 +23,7 @@ function Search() {
     return (
         <div class="container">
             <input
+                id="search-bar"
                 value={search}
                 placeholder="Desired Skill...."
                 onChange={handleSearch}
