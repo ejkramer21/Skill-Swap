@@ -4,6 +4,7 @@ import Test from "./components/jsx/Test"
 import { BrowserRouter, Route, Routes} from 'react-router-dom';
 import NavBar from './components/jsx/NavBar';
 import Search from './components/jsx/Search';
+import Skills from './components/jsx/Skills';
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" element={<Test/>} />
           <Route path="/profile" element={<Profile/>} />
           <Route path="/search" element={<Search/>} />
+          <Route path="/skills" element={<Skills/>} />
         </Routes>
         
         
