@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+}
+
+.child {
+    flex: 1;
+}
+
+.block-group {
+    display: block;
+    height: 8vh;
+    width: 50vw;
+}
+
+#block-group {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    margin-left: 2vh;
+    margin-right: 2vh;
+}
+
+#profile-pic{
+    border-radius: 50%; /* Set border-radius to 50% for a circular shape */
+    width: 30vh; /* Set the desired width and height of the image to create a perfect circle */
+    height: 30vh;
+    object-fit: cover;
+    border: solid;
+    margin-right: 10vh;
+}
+
+textarea {
+    height: 30vh;
+    width: 90vw;
+    align-items: center;
+}
+
+h2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+h1 {
+    margin-top: 0px;
+}
+

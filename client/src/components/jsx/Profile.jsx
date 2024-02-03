@@ -39,32 +39,40 @@ function Profile() {
     return (
         <>
             <h1>Profile</h1>
-            <button>
-                    <img src="https://play-lh.googleusercontent.com/38AGKCqmbjZ9OuWx4YjssAz3Y0DTWbiM5HB0ove1pNBq_o9mtWfGszjZNxZdwt_vgHo=w240-h480-rw" alt="Logo" width="100" height="100" class="rounded mx-auto d-block center" />      
-            </button>
-            <br></br>
-            <input
-                type="text"
-                value={firstName}
-                onChange={handleFirst}
-                placeholder="First Name"
-            />
-            <br></br>
-            <input
-                type="text"
-                value={lastName}
-                onChange={handleLast}
-                placeholder="Last Name"
-            />
-            <br></br>
-            <input
-                type="text"
-                value={zip}
-                onChange={handleZip}
-                placeholder="Zip Code"
-            />
-            {!validZip && <p style={{ color: 'red' }}>Invalid Zip Code</p>}
-            <h3>About</h3>
+            <div className="container">
+            {/* <button className="child" > */}
+                {/* <button> */}
+                        <img id="profile-pic" src="https://play-lh.googleusercontent.com/38AGKCqmbjZ9OuWx4YjssAz3Y0DTWbiM5HB0ove1pNBq_o9mtWfGszjZNxZdwt_vgHo=w240-h480-rw" alt="Logo" width="100" height="100" class="rounded mx-auto d-block center" />      
+                {/* </button> */}
+            {/* </button> */}
+            <div className="child" id="block-group">
+                <input
+                    type="text"
+                    value={firstName}
+                    onChange={handleFirst}
+                    placeholder="First Name"
+                    className="block-group"
+                />
+                <br></br>
+                <input
+                    type="text"
+                    value={lastName}
+                    onChange={handleLast}
+                    placeholder="Last Name"
+                    className="block-group"
+                />
+                <br></br>
+                <input
+                    type="text"
+                    value={zip}
+                    onChange={handleZip}
+                    placeholder="Zip Code"
+                    className="block-group"
+                />
+                {!validZip ? <p style={{ color: 'red' }}>Invalid Zip Code</p> : <p>Great!</p>}
+            </div>
+            </div>
+            <h2>About</h2>
             <textarea
                 type="text"
                 value={about}

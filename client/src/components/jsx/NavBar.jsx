@@ -13,6 +13,9 @@ function NavBar() {
                 <li>
                 <Link to="/Profile">Profile</Link>
                 </li>
+                <li>
+                <Link to="/Search">Search</Link>
+                </li>
             </ul>
         </nav>
         </>
